@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>log4net.TweetAppender</id>
+    <version>1.0.1</version>
+    <title>log4net tweet appenders</title>
+    <authors>RabbitSoftware</authors>
+    <owners>junioho</owners>
+    <description>
+		Push application messages to your smartphone
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/vndevpro/log4net.TweetAppender</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright @ RabbitSoftware 2020</copyright>
+    <dependencies>
+        <group targetFramework="net45">
+          <dependency id="log4net" version="2.0.8" />
+        </group>
+    </dependencies>
+    <references></references>
+    <tags>Logging Log4Net Tweet Appender</tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+  </files>
+</package>
