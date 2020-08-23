@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>log4net.TweetAppender</id>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <title>log4net tweet appenders</title>
     <authors>RabbitSoftware</authors>
     <owners>junioho</owners>

@@ -10,7 +10,7 @@ namespace log4net.TweetAppender
     {
         private string _appKey = string.Empty;
         private string _appSecret = string.Empty;
-        private string _appUrl = string.Empty;
+        private string _serviceUrl = string.Empty;
         private string _targetType = string.Empty;
 
         protected override void Append(LoggingEvent loggingEvent)
@@ -28,9 +28,9 @@ namespace log4net.TweetAppender
             _appSecret = appSecret;
         }
 
-        public void AddAppUrl(string appUrl)
+        public void AddServiceUrl(string serviceUrl)
         {
-            _appUrl = appUrl;
+            _serviceUrl = serviceUrl;
         }
 
         public void AddTargetType(string targetType)
@@ -45,7 +45,7 @@ namespace log4net.TweetAppender
                 {
                     var json = BuildJson(loggingEvent);
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
-                    var response = await client.PostAsync(_appUrl, content);
+                    var response = await client.PostAsync(_serviceUrl, content);
                     response.EnsureSuccessStatusCode();
                 }
             }
