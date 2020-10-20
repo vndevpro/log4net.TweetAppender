@@ -5,4 +5,4 @@ To build the package:
 
 To publish the package
 
->nuget push log4net.TweetAppender.1.0.1.nupkg -Source https://api.nuget.org/v3/index.json
+>nuget push log4net.TweetAppender.1.1.0.nupkg -Source https://www.nuget.org

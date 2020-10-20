@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>log4net.TweetAppender</id>
-    <version>1.0.3</version>
+    <version>1.1.0</version>
     <title>log4net tweet appenders</title>
     <authors>RabbitSoftware</authors>
     <owners>junioho</owners>
@@ -22,6 +22,9 @@
     <dependencies>
         <group targetFramework="net45">
           <dependency id="log4net" version="2.0.8" />
+        </group>
+		<group targetFramework="netstandard2.0">
+          <dependency id="log4net" version="2.0.11" />
         </group>
     </dependencies>
     <references></references>
